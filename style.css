@@ -1,0 +1,216 @@
+*{
+	margin:0;
+	padding0;
+
+}
+body {
+	margin:0px;
+	background:#1e242a;
+}
+
+#main {
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+}
+
+#box1 {
+	border-radius:10px;
+	width:530px;
+	height:625px;
+	background-image: url('1.jpg');
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	position:absolute;
+	bottom:-100%;
+	left:30%;
+	animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+#box1:after{
+	content:'';
+	position:absolute;
+	border-radius:10px;
+	width:530px;
+	height:625px;
+	background-image:url(2.jpg);
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	z-index: -1;
+}
+
+@keyframes anim {
+	from{
+		bottom:-100%;
+	}
+	to{
+		bottom:0%;
+	}
+}
+
+@keyframes anim2{
+	from{
+		left:30%;
+		width:530px;
+		
+	}
+	to{
+		width:0px;
+		left:50%;
+	}
+}
+
+
+#box2 {
+	width:auto;
+	height:auto;
+	font-family:'bahnscrift Condensed';
+	color:#E8F1F6;
+	font-size:10em;
+	font-weight:500;
+	line-height:130px;
+	position:absolute;
+	top:250px;
+	left:100px;
+	overflow:hidden;
+}
+
+#text {
+	text-transform: uppercase;
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+   
+}
+
+@keyframes anim3{
+	from{
+		left:-100%;
+	}
+	to{
+		left:0%;
+	}
+}
+
+#box3 {
+	overflow:hidden;
+}
+
+#container{
+	width:100%;
+	position:absolute;
+	top:-100%;
+	animation:anim4 2s forwards 2.5s;
+}
+
+#logo{
+	float:left;
+	margin-left:100px;
+	margin-top:20px;
+}
+
+#logo img {
+	width:50px;
+}
+
+#menu {
+	font-family:'Behnschrift Condensed';
+	font-size: 14px;
+	color:white;
+	letter-spacing:2px;
+	margin-right:150px;
+	margin-top:20px;
+	float:right;
+	text-transform:uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: arial;
+    color: #03ff45;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+
+
+@keyframes anim4{
+	from{
+		top:-100%;
+	}
+	to{
+		top:0%;
+	}
+}
+
+#logo h1 {
+    font-family: arial black;
+    color: #F70204;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+#logo h1 span {
+    color: #F7EA00;
+}
+
+span.happy {
+    color: #F70204;
+}
+
+span.birthday {
+    color: #F7EA00;
+}
+
+span.srur {
+    color: #CD9F8F;
+}
+
+li.shovo {
+	color: #F70204;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+li.poyda {
+    color: #953AB6;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+li.dibos {
+    color: #4DD800;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+li.sadiya {
+    color: #0ABEE3;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+li.jamai {
+    color: #F7EA00;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+
+
